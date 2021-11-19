@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><img src="assets/img/logo/Groza-logos.jpeg" width="50" height="50" ></a></li>
+            <li class="item button"><a href="vendor.html">Become a vendor</a></li>
+            <li class="item button secondary"><a href="sign-up.html">Sign Up</a></li>
+            <li class="item button secondary"><a href="login.html">Log in </a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <div class="bg-container">
+        <section class="main">
+            <img src="assets/img/pic2.jpeg" alt="">
+        </section>
+    </div>
+    <div class="box">
+        <h1>Order your groceries with us</h1>
+        <form>
+            <input type="text" name="" placeholder="Enter your address">
+            <input type="submit" name="" value="Stores near me">
+        </form>
+    </div>
+</body>
+</html>
